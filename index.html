@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice Up</title>
+    <!-- Linking the external CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header with navigation bar -->
+    <header>
+        <nav>
+            <!-- Logo of the website -->
+            <div class="logo">Voice Up</div>
+            <!-- Navigation links -->
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#issues">Report Issues</a></li>
+                <li><a href="#login">Login</a></li>
+            </ul>
+            <!-- Hamburger menu icon for small screens -->
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Home section with a welcome message -->
+    <section id="home" class="home">
+        <h1>Welcome to Voice Up</h1>
+        <p>Connecting Communities with Authorities for Transparency and Accountability.</p>
+        <!-- Button to navigate to the Report Issues section -->
+        <button onclick="location.href='#issues'">Report an Issue</button>
+    </section>
+
+    <!-- About section describing the website -->
+    <section id="about">
+        <h2>About Voice Up</h2>
+        <p>Voice Up is a platform that allows citizens to raise concerns, collaborate on solutions, and track responses from authorities in real time.</p>
+    </section>
+
+    <!-- Report Issues section with a form to submit issues -->
+    <section id="issues">
+        <h2>Report Issues</h2>
+        <!-- Issue reporting form -->
+        <form id="issueForm">
+            <label for="issueTitle">Issue Title:</label>
+            <input type="text" id="issueTitle" name="issueTitle" required>
+
+            <label for="issueDescription">Description:</label>
+            <textarea id="issueDescription" name="issueDescription" required></textarea>
+
+            <label for="anonymous">Report Anonymously?</label>
+            <input type="checkbox" id="anonymous" name="anonymous">
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Login/Register section -->
+    <section id="login">
+        <h2>Login/Register</h2>
+        <!-- Login form -->
+        <form id="loginForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Login</button>
+            <p>Not a member? <a href="#register">Register Here</a></p>
+        </form>
+    </section>
+
+    <!-- Footer with copyright information -->
+    <footer>
+        <p>&copy; 2024 Voice Up. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Linking the external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
