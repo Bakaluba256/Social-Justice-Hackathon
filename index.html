@@ -1,26 +1,21 @@
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Voice Up</title>
-    <!-- Linking the external CSS file -->
+    <title>Voice Up - Home</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header with navigation bar -->
     <header>
         <nav>
-            <!-- Logo of the website -->
             <div class="logo">Voice Up</div>
-            <!-- Navigation links -->
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#issues">Report Issues</a></li>
-                <li><a href="#login">Login</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="index.html#issues">Report Issues</a></li>
             </ul>
-            <!-- Hamburger menu icon for small screens -->
             <div class="burger">
                 <div class="line1"></div>
                 <div class="line2"></div>
@@ -29,60 +24,59 @@
         </nav>
     </header>
 
-    <!-- Home section with a welcome message -->
     <section id="home" class="home">
-        <h1>Welcome to Voice Up</h1>
-        <p>Connecting Communities with Authorities for Transparency and Accountability.</p>
-        <!-- Button to navigate to the Report Issues section -->
-        <button onclick="location.href='#issues'" id="issuesbutton">Report an Issue</button>
+            <h1>Welcome to Voice Up</h1>
+            <h1>Connecting Communities with Authorities for Transparency and Accountability</h1>
+            <p>
+                In today’s rapidly evolving society, fostering an open and transparent relationship between communities and their governing bodies is essential for sustainable development and mutual trust. Our mission is to bridge the gap between citizens and authorities, creating a platform that not only facilitates dialogue but also empowers individuals to voice their concerns and hold decision-makers accountable.
+            </p>
+        
+            <h2>Why This Matters:</h2>
+            <ol>
+                <li>
+                    <strong>Empowerment of Citizens:</strong> We believe that every individual has the right to participate in the decision-making processes that affect their lives. By providing a channel for feedback and communication, we encourage community members to actively engage with their local authorities, ensuring their voices are heard.
+                </li>
+                <li>
+                    <strong>Building Trust:</strong> Transparency is the cornerstone of any healthy relationship between communities and their leaders. Our initiative aims to foster trust by promoting accountability through regular updates, feedback mechanisms, and open forums for discussion. When authorities are open about their actions and decisions, communities are more likely to trust their leaders and support their initiatives.
+                </li>
+                <li>
+                    <strong>Encouraging Active Participation:</strong> We seek to create a culture of involvement where community members feel encouraged to participate in local governance. By providing easy access to information, resources, and support, we empower individuals to contribute to their communities’ development.
+                </li>
+                <li>
+                    <strong>Creating Collaborative Solutions:</strong> Collaboration is key to addressing the unique challenges faced by communities. Our platform serves as a space where citizens and authorities can work together to identify issues and develop solutions tailored to their specific needs.
+                </li>
+                <li>
+                    <strong>Promoting Social Justice:</strong> In an era where many voices are marginalized, we strive to amplify those voices, especially from underrepresented groups. By ensuring equitable access to resources and support, we promote social justice and inclusivity in all our initiatives.
+                </li>
+            </ol>
+        
+            <h2>Our Vision:</h2>
+            <p>
+                We envision a future where communities and authorities operate in a harmonious partnership, working towards common goals of progress and development. Through ongoing dialogue, mutual respect, and shared responsibility, we aspire to cultivate a society where transparency and accountability are not just ideals but everyday practices.
+            </p>
+        </section>
+        
     </section>
 
-    <!-- About section describing the website -->
-    <section id="about">
-        <h2>About Voice Up</h2>
-        <p>Voice Up is a platform that allows citizens to raise concerns, collaborate on solutions, and track responses from authorities in real time.</p>
-    </section>
-
-    <!-- Report Issues section with a form to submit issues -->
     <section id="issues">
         <h2>Report Issues</h2>
-        <!-- Issue reporting form -->
+
         <form id="issueForm">
-            <label for="issueTitle">Issue Title:</label>
-            <input type="text" id="issueTitle" name="issueTitle" required>
-
-            <label for="issueDescription">Description:</label>
-            <textarea id="issueDescription" name="issueDescription" required></textarea>
-
+            <input type="text" id="issueTitle" placeholder="Title" required>
+            <textarea id="issueDescription" placeholder="Describe your issue" required></textarea>
             <label for="anonymous">Report Anonymously?</label>
-            <input type="checkbox" id="anonymous" name="anonymous">
-
-            <button type="submit">Submit</button>
+            <input type="checkbox" id="anonymous">
+            <button type="submit">Submit Issue</button>
         </form>
-    </section>
+        
 
-    <!-- Login/Register section -->
-    <section id="login">
-        <h2>Login/Register</h2>
-        <!-- Login form -->
-        <form id="loginForm">
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>
-
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-
-            <button type="submit" id="#submitbutton">Login</button>
-            <p>Not a member? <a href="#register">Register Here</a></p>
-        </form>
     </section>
 
     <!-- Footer with copyright information -->
-    <footer>
-        <p>&copy; 2024 Voice Up. All Rights Reserved.</p>
-    </footer>
-
-    <!-- Linking the external JavaScript file -->
-    <script src="script.js"></script>
+<footer>
+    <p>&copy; 2024 Voice Up. All Rights Reserved.</p>
+</footer>
+    
+    <script src="main.js"></script>
 </body>
-</html>
+</html> 
